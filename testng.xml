@@ -1,0 +1,11 @@
+<suite name="Suite" verbose ="1">
+    <test name = "Abcd">
+    <classes>
+        <class name="A.MyTest">
+            <methods>
+                <include name="google"/>
+            </methods>
+        </class>
+    </classes>
+    </test>
+</suite>
