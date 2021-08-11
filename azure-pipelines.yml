@@ -10,6 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- script: |
+      sudo apt install google-chrome-stable
+      displayName: 'Install Chrome'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
