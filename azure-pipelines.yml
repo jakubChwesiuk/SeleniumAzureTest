@@ -3,13 +3,16 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
-trigger:
-- master
+# trigger:
+# - master
 
 pool:
   vmImage: ubuntu-latest
 
 steps:
+- script: |
+      sudo apt install google-chrome-stable
+    
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
