@@ -10,8 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: |
-      sudo apt install google-chrome-stable
+# - script: |
+#       sudo apt install google-chrome-stable
     
 - task: Maven@3
   inputs:
