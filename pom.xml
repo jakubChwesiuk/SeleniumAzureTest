@@ -20,7 +20,7 @@
                         <configuration>
                             <argLine>-Xmx1024m -XX:MaxPermSize=512m</argLine>
                             <suiteXmlFiles>
-                                <suiteXmlFile>${project.basedir}/testng_xml/testng.xml</suiteXmlFile>
+                                <suiteXmlFile>${project.basedir}/testng.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>

@@ -9,7 +9,7 @@ public class MyTest {
     @Test
     public void google(){
         WebDriverManager.chromedriver().setup();
-        
+
 //        System.setProperty("webdriver.chrome.driver","C:\\ChromeDriver\\92\\chromedriver.exe");
         WebDriver webDriver = new ChromeDriver();
         webDriver.get("https://google.pl");
