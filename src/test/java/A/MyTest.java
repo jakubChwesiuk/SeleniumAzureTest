@@ -23,7 +23,7 @@ public class MyTest {
     }
     
        @Test
-    public void google(){
+    public void twitter(){
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
