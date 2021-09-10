@@ -12,9 +12,27 @@ public class MyTest {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
+
 //        System.setProperty("webdriver.chrome.driver","C:\\ChromeDriver\\92\\chromedriver.exe");
         WebDriver webDriver = new ChromeDriver(options);
         webDriver.get("https://google.pl");
+                System.out.println("google thread Id"+Thread.currentThread().getId());
+        System.out.println("google thread Id"+Thread.currentThread().getId());
+        System.out.println("google thread Id"+Thread.currentThread().getId());
+        webDriver.close();
+    }
+    
+       @Test
+    public void google(){
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+//        System.setProperty("webdriver.chrome.driver","C:\\ChromeDriver\\92\\chromedriver.exe");
+        WebDriver webDriver = new ChromeDriver(options);
+        webDriver.get("https://twitter.pl");
+        System.out.println("google thread Id"+Thread.currentThread().getId());
+        System.out.println("google thread Id"+Thread.currentThread().getId());
+        System.out.println("google thread Id"+Thread.currentThread().getId());
         webDriver.close();
     }
     
