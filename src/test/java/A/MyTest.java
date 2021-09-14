@@ -16,9 +16,10 @@ public class MyTest {
 //        System.setProperty("webdriver.chrome.driver","C:\\ChromeDriver\\92\\chromedriver.exe");
         WebDriver webDriver = new ChromeDriver(options);
         webDriver.get("https://google.pl");
-                System.out.println("google thread Id"+Thread.currentThread().getId());
-        System.out.println("google thread Id"+Thread.currentThread().getId());
-        System.out.println("google thread Id"+Thread.currentThread().getId());
+        System.out.println(System.getProperty("MyVar"));
+        System.out.println(System.getProperty("MyVar"));
+       System.out.println(System.getProperty("MyVar"));
+        System.out.println(System.getProperty("MyVar"));
         webDriver.close();
     }
     
@@ -30,9 +31,7 @@ public class MyTest {
 //        System.setProperty("webdriver.chrome.driver","C:\\ChromeDriver\\92\\chromedriver.exe");
         WebDriver webDriver = new ChromeDriver(options);
         webDriver.get("https://twitter.pl");
-        System.out.println("google thread Id"+Thread.currentThread().getId());
-        System.out.println("google thread Id"+Thread.currentThread().getId());
-        System.out.println("google thread Id"+Thread.currentThread().getId());
+
         webDriver.close();
     }
     
